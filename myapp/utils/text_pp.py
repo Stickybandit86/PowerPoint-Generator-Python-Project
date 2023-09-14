@@ -9,6 +9,7 @@ from pptx.util import Inches
 from urllib.parse import quote_plus
 from dotenv import load_dotenv
 
+
 dir_path = 'static/presentations'
 
 load_dotenv()

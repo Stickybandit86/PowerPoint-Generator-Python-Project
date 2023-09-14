@@ -1,4 +1,8 @@
 import os
+import sys
+
+sys.path.append("/workspaces/PowerPoint-Generator-Python_project/myapp/flaskapp.py")
+
 from flask import Flask, render_template, url_for, flash, redirect, request, send_from_directory, abort
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user
 
@@ -9,6 +13,7 @@ from models import User
 from utils.gpt_generate import chat_development
 from utils.text_pp import parse_response, create_ppt
 from dotenv import load_dotenv
+from text_pp import create_ppt
 
 load_dotenv()  # This loads the .env file
 
